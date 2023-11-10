@@ -1,3 +1,7 @@
-﻿Console.WriteLine(Calc.Calculator.Multiply(1, 2));
-Console.WriteLine(Calc.Calculator.Divide(9, 4));
-Console.WriteLine(Calc.Calculator.Divide(9, 0));
+﻿using Calc;
+
+var calculator = new Calculator();
+
+Console.WriteLine(calculator.Multiply(1, 2));
+Console.WriteLine(calculator.Divide(9, 4));
+Console.WriteLine(calculator.Divide(9, 0));

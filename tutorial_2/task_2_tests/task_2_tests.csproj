@@ -22,4 +22,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\task_2\task_2.csproj" />
+  </ItemGroup>
+
 </Project>
