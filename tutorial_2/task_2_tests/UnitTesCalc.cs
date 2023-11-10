@@ -24,7 +24,7 @@ public class CalculatorTests
     public void Divide_DivisorNotZero_ReturnsQuotient()
     {
         // Arrange
-        Calculator calculator = new Calculator();
+        var calculator = new Calculator();
         double dividend = 10.0;
         double divisor = 2.0;
         double expected = 5.0;
