@@ -1,6 +1,6 @@
-namespace Calc;
+namespace task_2;
 
-public class Calculator
+public class Calculator : ICalculator
 {
   public double Multiply(double a, double b)
   {

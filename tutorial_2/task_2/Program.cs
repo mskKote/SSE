@@ -1,4 +1,4 @@
-﻿using Calc;
+﻿using task_2;
 
 var calculator = new Calculator();
 

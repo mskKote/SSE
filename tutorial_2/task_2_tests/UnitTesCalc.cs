@@ -1,4 +1,4 @@
-using Calc;
+using task_2;
 
 namespace task_2_tests;
 
@@ -35,7 +35,7 @@ public class CalculatorTests
         // Assert
         Assert.Equal(expected, result, 3);
     }
-
+    
     [Fact]
     public void Divide_DivisorZero_ReturnsNaN()
     {
