@@ -1,6 +1,6 @@
-using task_2;
+using task_1_2;
 
-namespace task_3;
+namespace task_1_3;
 
 public class UnitTestMoqBehavior
 {
@@ -21,7 +21,7 @@ public class UnitTestMoqBehavior
         // Assert
         Assert.Equal(12, result);
     }
-    
+
     [Fact]
     public void Calc_WithMock()
     {
@@ -29,8 +29,8 @@ public class UnitTestMoqBehavior
         var mockCalculator = new Mock<ICalculator>();
         mockCalculator
             .Setup(x => x.Multiply(
-                    It.IsAny<double>(),
-                    It.IsAny<double>())
+                It.IsAny<double>(),
+                It.IsAny<double>())
             )
             .Returns((double a, double b) => a * b);
 

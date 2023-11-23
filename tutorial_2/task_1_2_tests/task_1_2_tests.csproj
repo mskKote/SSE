@@ -7,6 +7,7 @@
 
         <IsPackable>false</IsPackable>
         <IsTestProject>true</IsTestProject>
+        <RootNamespace>task_2_tests</RootNamespace>
         <LangVersion>default</LangVersion>
     </PropertyGroup>
 
@@ -24,7 +25,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\task_3_1\task_3_1.csproj"/>
+        <ProjectReference Include="..\task_1_2\task_1_2.csproj"/>
     </ItemGroup>
 
 </Project>

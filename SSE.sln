@@ -5,17 +5,17 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tutorial_1", "tutorial_1", "{B9C14F4B-350C-47BE-9F62-FDCC3A69D769}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "task_1", "tutorial_1\task_1\task_1.csproj", "{A31CFBF5-7701-4E72-BF1A-4CEAB1EC66EA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "task_1_1", "tutorial_1\task_1_1\task_1_1.csproj", "{A31CFBF5-7701-4E72-BF1A-4CEAB1EC66EA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tutorial_2", "tutorial_2", "{437ACD92-3AE4-4FFE-925B-2CA80883B192}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "task_2_1", "tutorial_2\task_2_1\task_2_1.csproj", "{1D4EEF7D-3118-4588-AEFC-910C07BE0BAC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "task_2", "tutorial_2\task_2\task_2.csproj", "{6E89DA99-A36C-45FC-96B2-A16D8D102590}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "task_1_2", "tutorial_2\task_1_2\task_1_2.csproj", "{6E89DA99-A36C-45FC-96B2-A16D8D102590}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "task_2_tests", "tutorial_2\task_2_tests\task_2_tests.csproj", "{9FC403BA-5BFA-4251-899C-82F390017B47}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "task_1_2_tests", "tutorial_2\task_1_2_tests\task_1_2_tests.csproj", "{9FC403BA-5BFA-4251-899C-82F390017B47}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "task_3", "tutorial_2\task_3\task_3.csproj", "{AA46353D-5104-4DB3-A2D7-237D4845B00C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "task_1_3", "tutorial_2\task_1_3\task_1_3.csproj", "{AA46353D-5104-4DB3-A2D7-237D4845B00C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "task_2_1_tests", "tutorial_2\task_2_1_tests\task_2_1_tests.csproj", "{5438188B-2289-4AB3-A718-7A56C8D4CDA6}"
 EndProject
@@ -26,6 +26,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "task_3_1", "task_3_1\task_3_1.csproj", "{D92C8FFA-40CC-4034-BDA9-AB67A8300D69}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "task_3_1_tests", "task_3_1_tests\task_3_1_tests.csproj", "{89F53534-D227-4D8F-AD60-FE33010CC505}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "task_3_3", "task_3_3\task_3_3.csproj", "{387A8530-0AA8-432F-B26B-A57DC349AEE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "task_3_3_tests", "task_3_3_tests\task_3_3_tests.csproj", "{C190956D-69C2-4FA8-8DDF-77D2FD3AEDBE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +73,14 @@ Global
 		{89F53534-D227-4D8F-AD60-FE33010CC505}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89F53534-D227-4D8F-AD60-FE33010CC505}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89F53534-D227-4D8F-AD60-FE33010CC505}.Release|Any CPU.Build.0 = Release|Any CPU
+		{387A8530-0AA8-432F-B26B-A57DC349AEE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{387A8530-0AA8-432F-B26B-A57DC349AEE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{387A8530-0AA8-432F-B26B-A57DC349AEE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{387A8530-0AA8-432F-B26B-A57DC349AEE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C190956D-69C2-4FA8-8DDF-77D2FD3AEDBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C190956D-69C2-4FA8-8DDF-77D2FD3AEDBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C190956D-69C2-4FA8-8DDF-77D2FD3AEDBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C190956D-69C2-4FA8-8DDF-77D2FD3AEDBE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -83,5 +95,7 @@ Global
 		{6FFB69CB-7F98-47B8-BE5A-3C6E9E193B11} = {437ACD92-3AE4-4FFE-925B-2CA80883B192}
 		{D92C8FFA-40CC-4034-BDA9-AB67A8300D69} = {97F40DA4-FFAA-4889-A72E-281EBD8F4C19}
 		{89F53534-D227-4D8F-AD60-FE33010CC505} = {97F40DA4-FFAA-4889-A72E-281EBD8F4C19}
+		{387A8530-0AA8-432F-B26B-A57DC349AEE6} = {97F40DA4-FFAA-4889-A72E-281EBD8F4C19}
+		{C190956D-69C2-4FA8-8DDF-77D2FD3AEDBE} = {97F40DA4-FFAA-4889-A72E-281EBD8F4C19}
 	EndGlobalSection
 EndGlobal

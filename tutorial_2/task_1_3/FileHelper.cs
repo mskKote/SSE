@@ -1,4 +1,4 @@
-namespace task_3;
+namespace task_1_3;
 
 public static class FileHelper
 {
@@ -13,10 +13,7 @@ public static class FileHelper
             while ((line = reader.ReadLine() ?? string.Empty) != null)
             {
                 Console.WriteLine(line);
-                if (TryParseFloatTriple(line, out var floatPair))
-                {
-                    floatPairs.Add(floatPair);
-                }
+                if (TryParseFloatTriple(line, out var floatPair)) floatPairs.Add(floatPair);
                 // If parsing fails for a line, you may want to handle it or skip it.
                 throw new IOException("Не получилось считать из файла");
             }
