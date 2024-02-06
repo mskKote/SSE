@@ -1,6 +1,8 @@
 ﻿namespace Bookmark.Models;
 
-public class Bookmark
+public sealed class Bookmark
 {
-    // TODO: Property declaration
+    public int Id { get; set; }
+    public string Url { get; set; }
+    public int UserId { get; set; }
 }

@@ -9,5 +9,21 @@
       <Id>1</Id>
       <Name>Bob Marsh</Name>
     </User>
+    <User>
+      <Id>3</Id>
+      <Name>vitalii</Name>
+    </User>
   </Users>
+  <Bookmarks>
+    <Bookmark>
+      <Id>1</Id>
+      <Url>https://translate.google.com/?sl=auto&amp;tl=ru&amp;text=l%C3%A4uft&amp;op=translate</Url>
+      <UserId>3</UserId>
+    </Bookmark>
+    <Bookmark>
+      <Id>2</Id>
+      <Url>https://translate.google.com/?sl=auto&amp;tl=ru&amp;text=l%C3%A4uft&amp;op=translate</Url>
+      <UserId>3</UserId>
+    </Bookmark>
+  </Bookmarks>
 </Database>

@@ -2,7 +2,7 @@ using Bookmark.Models;
 
 namespace Bookmark;
 
-public class Program
+public static class Program
 {
     public static void Main(string[] args)
     {
@@ -16,7 +16,7 @@ public class Program
         builder.Services.AddSwaggerGen();
 
         // Mapping Dependencies
-        //builder.Services.AddScoped<IBookmarkRepository, BookmarkXmlRepository>();
+        builder.Services.AddScoped<IBookmarkRepository, BookmarkXmlRepository>();
         builder.Services.AddScoped<IUserRepository, UserXmlRepository>();
 
         var app = builder.Build();
@@ -29,11 +29,7 @@ public class Program
         }
 
         app.UseAuthorization();
-
-
         app.MapControllers();
-
-
         app.Run();
     }
 }
