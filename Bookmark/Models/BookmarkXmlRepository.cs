@@ -11,6 +11,14 @@ public class BookmarkXmlRepository(IHostEnvironment env) : IBookmarkRepository
         return database.Bookmarks;
     }
 
+    public Bookmark[] SearchBySubstring(string substring)
+    {
+        var database = Database.Deserialize(_xmlFile);
+        return database.Bookmarks
+            .Where(x => x.Url.Contains(substring))
+            .ToArray();
+    }
+
     public Bookmark? GetById(int id)
     {
         var database = Database.Deserialize(_xmlFile);
