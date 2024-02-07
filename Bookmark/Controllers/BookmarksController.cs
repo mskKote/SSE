@@ -31,4 +31,14 @@ public class BookmarksController(
         var searchStr = HttpUtility.UrlDecode(search);
         return bookmarkRepository.SearchBySubstring(searchStr);
     }
+
+    // PUT bookmarks/5
+    [HttpPut("{id:int}")]
+    public void Put(int id, [FromBody] Models.Bookmark bookmark)
+    {
+        // id is also expected in the body
+        if (bookmark.Id == 0 || bookmark.Id != id)
+            throw new Exception("Missing or mismatched ID detected");
+        bookmarkRepository.Update(bookmark);
+    }
 }

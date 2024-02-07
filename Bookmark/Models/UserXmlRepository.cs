@@ -4,15 +4,13 @@ using System.Xml.XPath;
 
 namespace Bookmark.Models;
 
-public class UserXmlRepository(IHostEnvironment env) : IUserRepository
+public sealed class UserXmlRepository(IHostEnvironment env) : IUserRepository
 {
-    private const string XmlFile = "/data.xml";
-    private readonly string _xmlFile = env.ContentRootPath + XmlFile;
+    private readonly string _xmlFile = env.ContentRootPath + Database.XmlFile;
 
     public User[] GetAll()
     {
-        var database = Database.Deserialize(_xmlFile);
-        return database.Users;
+        return Database.Deserialize(_xmlFile).Users;
     }
 
     public User? GetById(int id)

@@ -18,6 +18,7 @@ public static class Program
         // Mapping Dependencies
         builder.Services.AddScoped<IBookmarkRepository, BookmarkXmlRepository>();
         builder.Services.AddScoped<IUserRepository, UserXmlRepository>();
+        builder.Services.AddScoped<ICategoryRepository, CategoryXmlRepository>();
 
         var app = builder.Build();
 

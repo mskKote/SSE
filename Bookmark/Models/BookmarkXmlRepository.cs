@@ -1,28 +1,29 @@
 namespace Bookmark.Models;
 
-public class BookmarkXmlRepository(IHostEnvironment env) : IBookmarkRepository
+public sealed class BookmarkXmlRepository(IHostEnvironment env) : IBookmarkRepository
 {
-    private const string XmlFile = "/data.xml";
-    private readonly string _xmlFile = env.ContentRootPath + XmlFile;
+    private readonly string _xmlFile = env.ContentRootPath + Database.XmlFile;
 
     public Bookmark[] GetAll()
     {
-        var database = Database.Deserialize(_xmlFile);
-        return database.Bookmarks;
+        return Database.Deserialize(_xmlFile).Bookmarks;
     }
 
     public Bookmark[] SearchBySubstring(string substring)
     {
-        var database = Database.Deserialize(_xmlFile);
-        return database.Bookmarks
+        return Database
+            .Deserialize(_xmlFile)
+            .Bookmarks
             .Where(x => x.Url.Contains(substring))
             .ToArray();
     }
 
     public Bookmark? GetById(int id)
     {
-        var database = Database.Deserialize(_xmlFile);
-        return database.Bookmarks.FirstOrDefault(x => x.Id == id);
+        return Database
+            .Deserialize(_xmlFile)
+            .Bookmarks
+            .FirstOrDefault(x => x.Id == id);
     }
 
     public int Create(Bookmark bookmark)
@@ -57,7 +58,10 @@ public class BookmarkXmlRepository(IHostEnvironment env) : IBookmarkRepository
 
     public Bookmark[] GetByUser(int user)
     {
-        var database = Database.Deserialize(_xmlFile);
-        return database.Bookmarks.Where(b => b.UserId == user).ToArray();
+        return Database
+            .Deserialize(_xmlFile)
+            .Bookmarks
+            .Where(b => b.UserId == user)
+            .ToArray();
     }
 }

@@ -4,8 +4,10 @@ namespace Bookmark.Models;
 
 public class Database
 {
+    public const string XmlFile = "/data.xml";
     public User[] Users { get; set; } = [];
     public Bookmark[] Bookmarks { get; set; } = [];
+    public Category[] Categories { get; set; } = [];
 
     public void Serialize(string xmlFile)
     {
