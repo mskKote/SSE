@@ -53,6 +53,7 @@ public sealed class BookmarkXmlRepository(IHostEnvironment env) : IBookmarkRepos
     {
         var database = Database.Deserialize(_xmlFile);
         database.Users = database.Users.Where(b => b.Id != id).ToArray();
+        database.Bookmarks = database.Bookmarks.Where(b => b.UserId != id).ToArray();
         database.Serialize(_xmlFile);
     }
 

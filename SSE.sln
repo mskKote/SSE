@@ -55,6 +55,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tutorial_7", "tutorial_7", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bookmark", "Bookmark\Bookmark.csproj", "{1CE0D6A4-490C-458B-83CA-4BCAABB49243}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tutorial_8", "tutorial_8", "{3120658D-DE43-4EE8-97BA-DDA7F24510B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "task_1_books_service", "task_1_books_service\task_1_books_service.csproj", "{0AE1039A-C21D-4CD3-B89D-719FCE02E398}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -145,6 +149,10 @@ Global
 		{1CE0D6A4-490C-458B-83CA-4BCAABB49243}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1CE0D6A4-490C-458B-83CA-4BCAABB49243}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1CE0D6A4-490C-458B-83CA-4BCAABB49243}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AE1039A-C21D-4CD3-B89D-719FCE02E398}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AE1039A-C21D-4CD3-B89D-719FCE02E398}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AE1039A-C21D-4CD3-B89D-719FCE02E398}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AE1039A-C21D-4CD3-B89D-719FCE02E398}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -171,5 +179,6 @@ Global
 		{28E4BA63-3A98-47EF-8937-AFF0E4DA1145} = {17CA2086-803C-4B66-843C-A0F23F94DD25}
 		{22C79115-E36A-4639-83C9-E3DECD06C75D} = {17CA2086-803C-4B66-843C-A0F23F94DD25}
 		{1CE0D6A4-490C-458B-83CA-4BCAABB49243} = {0B805F3F-5604-4641-B57E-8C8568B24A38}
+		{0AE1039A-C21D-4CD3-B89D-719FCE02E398} = {3120658D-DE43-4EE8-97BA-DDA7F24510B1}
 	EndGlobalSection
 EndGlobal
