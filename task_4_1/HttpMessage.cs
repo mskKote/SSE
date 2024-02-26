@@ -139,9 +139,9 @@ public class HttpMessage
     /// </summary>
     public void SetCookie(string name, string value)
     {
-        var hasCookieHeader = Headers.TryGetValue("Cookie", out var cookie);
-        if (hasCookieHeader == false) Headers.Add("Cookie", $"{name}={value}");
-        else Headers["Cookie"] = cookie + $" {name}={value}";
+        var hasCookieHeader = Headers.TryGetValue("Set-Cookie", out var cookie);
+        if (hasCookieHeader == false) Headers.Add("Set-Cookie", $"{name}={value}");
+        else Headers["Set-Cookie"] = cookie + $" {name}={value}";
     }
 
     /// <summary>
